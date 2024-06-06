@@ -5,7 +5,6 @@ exports.up = async function (db) {
       ALTER TABLE
         clips
       ADD COLUMN status TEXT DEFAULT NULL,
-      ADD COLUMN empty BOOLEAN DEFAULT FALSE,
       ADD COLUMN sample_rate INTEGER DEFAULT NULL,
       ADD COLUMN duration INTEGER DEFAULT NULL,
       ADD COLUMN size INTEGER DEFAULT NULL

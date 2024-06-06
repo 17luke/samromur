@@ -4,7 +4,7 @@ exports.up = async function (db) {
     return db.runSql(`
       ALTER TABLE user_clients
         ADD COLUMN sso_id VARCHAR(255) UNIQUE,
-        ADD COLUMN username TEXT NOT NULL DEFAULT '',
+        ADD COLUMN username VARCHAR(255) NOT NULL DEFAULT '',
         ADD COLUMN basket_token TEXT;
     `);
 };
