@@ -2,7 +2,6 @@ export enum DemographicError {
     NO_AGE = 'NO_AGE',
     NO_GENDER = 'NO_GENDER',
     NO_NATIVE_LANGUAGE = 'NO_NATIVE_LANGUAGE',
-    NO_ICELANDIC_PROFICIENCY = 'NO_ICELANDIC_PROFICIENCY',
 }
 
 export interface Demographics {
