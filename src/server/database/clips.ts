@@ -129,8 +129,7 @@ export default class Clips {
                         clips.path as path, 
                         clips.sentence as sentence,
                         clips.client_id as client_id,
-                        clips.status as status,
-                        clips.empty as empty
+                        clips.status as status
                     FROM
                         clips JOIN votes
                         ON clips.id = votes.clip_id
