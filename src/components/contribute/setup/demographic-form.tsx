@@ -300,7 +300,7 @@ class DemographicForm extends React.Component<Props, State> {
             (val: Demographic) => t(val.name) == value
         ) as Demographic;
         // if native language is Icelandic, set proficiency to native
-        if (nativeLanguage.id == 'islenska') {
+        if (!!nativeLanguage && nativeLanguage.id == 'islenska') {
             this.setState({
                 icelandicProficiency: icelandicProficiencies.find(
                     (val: Demographic) => val.id == 'native'
